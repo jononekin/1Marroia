@@ -5,13 +5,9 @@ import java.util.Calendar;
 import java.util.Collection;
 import java.util.Date;
 
-import javax.jws.WebMethod;
-import javax.jws.WebService;
-
 import domain.RuralHouse;
 import domain.Offer;
 
-@WebService(endpointInterface = "businessLogic.OfferManager")
 public class MyOfferManager implements OfferManager{
 ArrayList<RuralHouse> ruralHouses;
 
@@ -50,7 +46,6 @@ public MyOfferManager () {
 
 	
 }
-		@WebMethod
 		public Collection<Offer> getConcreteOffers(String city, Date date) {
 			
 				ArrayList<Offer> res = new ArrayList<Offer>();
