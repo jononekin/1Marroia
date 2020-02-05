@@ -8,7 +8,7 @@ import javax.jws.WebService;
 
 import domain.Offer;
 
-public interface OfferManager {
+public interface OfferManager { 
 	Collection<Offer> getConcreteOffers(String city, Date date);
 }
  
